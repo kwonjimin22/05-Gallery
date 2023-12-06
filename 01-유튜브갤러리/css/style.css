@@ -44,7 +44,7 @@ a:hover {
 }
 .video-wrap {
   position: fixed;
-  top: -50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 1024px;
@@ -52,10 +52,12 @@ a:hover {
 
   opacity: 0;
   transition: 0.3s;
+  pointer-events: none; /* 마우스 동작(클릭)이 안 통하게 */
 }
 .video-wrap.active {
   top: 50%;
   opacity: 1;
+  pointer-events: auto; /* 마우스 동작(클릭)이 다시 통하게 */
 }
 .video-wrap .video {
   aspect-ratio: 16/9;
@@ -64,6 +66,11 @@ a:hover {
   width: 100%;
   height: 100%;
   border: none;
+}
+.video-title {
+  background: #fff;
+  text-align: center;
+  padding: 10px;
 }
 
 .btn-close {
@@ -95,4 +102,5 @@ a:hover {
   border: 5px solid #000;
   padding: 50px;
   font-weight: 700;
+  cursor: pointer;
 }
