@@ -20,6 +20,9 @@ img {
 
 body {
   font: 1em/1.6 'Pretendard', sans-serif;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
 }
 
 a {
@@ -39,6 +42,7 @@ a:hover {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
 
   display: none; /* jQeury : fadeIn / fadeOut */
 }
@@ -103,4 +107,6 @@ a:hover {
   padding: 50px;
   font-weight: 700;
   cursor: pointer;
+  color: #fff;
+  filter: grayscale(1);
 }
