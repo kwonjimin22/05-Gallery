@@ -47,6 +47,7 @@ a:hover {
   display: none; /* jQeury : fadeIn / fadeOut */
 }
 .video-wrap {
+  z-index: 10;
   position: fixed;
   top: 40%;
   left: 50%;
