@@ -15,6 +15,14 @@ li {
 
 img {
   vertical-align: top;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: none;
+  vertical-align: top;
 }
 
 body {
@@ -56,6 +64,12 @@ body {
   opacity: 1;
   transform: translate(-50%, -50%) skewY(0deg);
   pointer-events: auto;
+}
+
+.title {
+  text-align: center;
+  color: #f39;
+  padding: 10px;
 }
 
 .btn-close {
